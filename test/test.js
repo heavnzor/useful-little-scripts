@@ -1,9 +1,11 @@
-console.log ('anto');
-numbers = [1, 2, 3, 4, 3, 2, 1, 34, 4, 'text'];
-for (const number of numbers) {
-  console.log (number);
-  if(typeof number == String){
-    number = number.length
-  }
-}
+const date = new Date()
 
+const dateDisplayed = date.toLocaleString('fr-FR')
+
+const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second : 'numeric'}
+
+const dateDisplayedLong = date.toLocaleString('fr-FR', options)
+
+console.log(dateDisplayed)
+
+console.log(dateDisplayedLong)
